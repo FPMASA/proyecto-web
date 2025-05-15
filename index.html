@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela FP Masa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        main {
+            display: flex;
+            margin-top: 20px;
+        }
+        section {
+            flex: 3;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        aside {
+            flex: 1;
+            margin-left: 20px;
+            background-color: #e8e8e8;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ccc;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Escuela FP Masa</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h3>Información sobre la escuela</h2>
+            <p>Bienvenido a Masa, donde la educación es nuestra prioridad. Ofrecemos programas educativos de alta calidad.</p><br><br>
+            <h3>Programas Educativos</h3>
+            <p>.Ofrecemos formación de programación: HTML, CSS Y JS  y más.</p>
+            <p>.Ofrecemos formación de PSICOLOGIA.</p>
+            <p>.Ofrecemos formación de POESÍA URBANA.</p>
+            <p>.Ofrecemos formación para la certificación de la UPU.</p><br><br>
+            <h3>Noticias y Eventos</h3>
+            <MARquee><p> El profesor Francisco, chateará una vez más con su media naranja. Deogracias se está planteando volver con su churuca..El servidor MASALE ha sido un éxito.Paciencia ha sido premiada por sus dotes escolares.</p></MARquee>
+            
+           
+             
+        </section>
+        <aside>
+            <h3>Enlaces Adicionales</h3>
+            <p><a href="#">Redes Sociales</a></p>
+            <p><a href="#">Calendario de Eventos</a></p>
+            <p><a href="#">Recursos para Estudiantes</a></p>
+            <p><a href="#">Email : dadomasa0999@gmail.com</a></p>
+        </aside>
+    </main>
+    <section>
+        <h2>Formulario de Contacto</h2>
+        <form id="contactForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+    
+  
+    <section>
+        <h2>Testimonios</h2>
+        <p>"La mejor escuela, mis 8 hijos han aprendido mucho aquí!" - Deogracias(padre contento)</p>
+    </section>
+    <section>
+        <h2>Recursos y Descargas</h2>
+        <p>Documentos útiles para estudiantes y padres...</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Masa. Todos los derechos reservados.</p>
+        <p><a href="#">Política de Privacidad</a> | <a href="#">Términos de Uso</a></p>
+    </footer>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Formulario enviado. Gracias por contactarnos!');
+        });
+    </script>
+</body>
+</html>
